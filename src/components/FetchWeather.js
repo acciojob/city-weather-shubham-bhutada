@@ -11,6 +11,7 @@ const FetchWeather = () => {
     .then(response => {
       console.log(response.data)
       setData(response.data)
+      setCity('');
     })
     .catch(err => console.log(err))
   }  
